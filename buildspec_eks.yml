@@ -44,5 +44,5 @@ phases:
       - echo Pushing the Docker image...
       - docker push 048362532706.dkr.ecr.ap-south-1.amazonaws.com/ci-cd-demo:latest
       - echo Push the latest image to cluster
-      - kubectl apply -f eks_cicd/deployment.yaml
+      - kubectl apply -f deployment.yml
       - kubectl rollout restart -f deployment.yml
